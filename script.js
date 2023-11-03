@@ -9,7 +9,7 @@
   .then(data => {
           // Process the data and display it
           let weatherInfo = document.getElementById("weatherInfo");
-          weatherInfo.innerHTML = `<h2 class="bg-warning mt-5 w-75  p-3">Weather in ${data.name}</h2>
+          weatherInfo.innerHTML = `<h2 class="bg-warning mt-4 w-75  p-3">Weather in ${data.name}</h2>
                                   <p class="bg-primary w-75 p-3">Temperature: ${Math.round(data.main.temp - 273.15)} °C 🌡</p>
                                   <p class="bg-danger w-75 p-3">Weather: ${data.weather[0].description} ☁</p>
                                   <p class="bg-info w-75 p-3">Humidity: ${data.main.humidity}% 💧</p>
