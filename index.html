@@ -4,18 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.css">
 </head>
 <body>
+    <center>
 
-    <h1>Weather App</h1>
+        <h1 class="fw-bold fs-1 bg-warning p-3">WEATHER CHECKER</h1>
+        <div class="col-6">
+            <input class="form-control border-3 border-warning p-3 mt-5" type="text" id="cityInput" placeholder="Enter Your City Name">
+        </div>
+        <div class="d-grid gap-2">
+            <button class="btn btn-outline-warning mt-3" onclick="getWeather()">Get Weather</button>
+
+        </div>
     
-    <label for="cityInput">Enter City Name:</label>
-    <input type="text" id="cityInput">
-    <button onclick="getWeather()">Get Weather</button>
+        <div id="weatherInfo"></div>
+    
+       
+    </center>
 
-    <div id="weatherInfo"></div>
-
-   
 
 
     <script src="script.js"></script>
