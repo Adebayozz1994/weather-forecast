@@ -1,18 +1,16 @@
   const getWeather = ()=> {
 
   let cityName = document.getElementById("cityInput").value;
-  let apiKey = "9044ef5da2b2aec7e85c6eafd1f3284b"; // Replace with your OpenWeatherMap API key
+  let apiKey = "9044ef5da2b2aec7e85c6eafd1f3284b";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}`;
 
   if(cityName ==""){
     weatherInfo.innerHTML=`<p class="bg-danger w-75 p-3 mt-4 fs-5">Please Enter Your CityName</p>`
 }else{
 
-  // Make API request
   fetch(apiUrl)
   .then(response => response.json())
   .then(data => {
-          // Process the data and display it
           let weatherInfo = document.getElementById("weatherInfo");
           cityInput.value = ""
           weatherInfo.innerHTML = ""
