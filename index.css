@@ -7,6 +7,7 @@
 body{
     background-image: url(image/pexels-pixabay-259620.jpg);
     background-size: cover;
+    
 }
 
 .flex{
@@ -19,20 +20,58 @@ img{
     width: 400px;
 }
 .temp{
+    margin-left: 30px;
     margin-top: -60px;
     font-size: 200px;
     color: white;
 }
 .para{
+    padding-top: 30px;
     margin-top: 80px;
     margin-left: 250px;
-    height: 250px;
+    height: 300px;
     width: 500px;
-    border: 2px solid white;
+    /* border: 2px solid white; */
     box-shadow: rgba(244, 238, 238, 0.5) 0px 2px 2px 3px;
 }
-.para h1{
+.para h4{
     color: white;
 
 }
 
+
+
+
+@media screen and (max-width: 475px){
+    .flex{
+        display: block;
+        
+    }
+    img{
+        margin-top: -60px;
+        height: 200px;
+        width: 200px;
+    }
+    .temp{
+        margin-left: 0px;
+        margin-top: 0px;
+        font-size: 100px;
+        color: white;
+    }
+    .para{
+        padding-top: 30px;
+        margin-top: -30px;
+        margin-bottom: 20px;
+        margin-left: 0px;
+        height: 200px;
+        width: 300px;
+        /* border: 2px solid white; */
+        box-shadow: rgba(244, 238, 238, 0.5) 0px 2px 2px 3px;
+    }
+    .para h4{
+        color: white;
+    
+    }
+    
+
+}

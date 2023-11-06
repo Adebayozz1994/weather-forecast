@@ -21,10 +21,10 @@ const getWeather = ()=> {
           <img src=${icon} class="img-fliud img-responsive" alt="weather icon "></img>
           </div>
           <div class="para">
-          <h3 class="text-light mt-4 w-50 ">Weather in ${data.name}</h3>
-                                  <h1 class="">Weather: ${data.weather[0].description} </h1>
-                                  <h1 class="">Humidity: ${data.main.humidity}% </h1>
-                                  <h1 class="">Wind Speed: ${data.wind.speed} m/s </h1>
+          <h2 class="text-light">Weather in ${data.name}</h2>
+                                  <h4 class="">Weather: ${data.weather[0].description} </h4>
+                                  <h4 class="">Humidity: ${data.main.humidity}% </h4>
+                                  <h4 class="">Wind Speed: ${data.wind.speed} m/s </h4>
                                   </div>
                                   </div>
                                   `;
