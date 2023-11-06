@@ -10,18 +10,17 @@
 <body>
     <center>
 
-        <h1 class="fw-bold fs-1 bg-warning p-3">WEATHER CHECKER</h1>
-        <div class="col-sm-8 col-lg-6">
+        <h1 class="fw-bold fs-1 bg-warning p-3 text-decoration-underline">WEATHER CHECKER</h1>
+        <div class="col-sm-8 col-lg-6 d-flex gap-2">
             <input class="form-control border-3 border-warning p-3 mt-3 fs-3" type="text" id="cityInput" placeholder="Enter Your City Name" autofocus>
+            <button class="btn btn-outline-light mt-3 p-3" onclick="getWeather()">Get Weather</button>
         </div>
         <div class="d-grid gap-2 ">
-            <button class="btn btn-outline-warning mt-3 p-3" onclick="getWeather()">Get Weather</button>
-
         </div>
     
         <div id="weatherInfo"></div>
     
-       
+    
     </center>
 
 

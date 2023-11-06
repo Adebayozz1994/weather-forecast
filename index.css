@@ -9,3 +9,30 @@ body{
     background-size: cover;
 }
 
+.flex{
+    display: flex;
+    
+}
+img{
+    margin-top: -100px;
+    height: 400px;
+    width: 400px;
+}
+.temp{
+    margin-top: -60px;
+    font-size: 200px;
+    color: white;
+}
+.para{
+    margin-top: 80px;
+    margin-left: 250px;
+    height: 250px;
+    width: 500px;
+    border: 2px solid white;
+    box-shadow: rgba(244, 238, 238, 0.5) 0px 2px 2px 3px;
+}
+.para h1{
+    color: white;
+
+}
+
